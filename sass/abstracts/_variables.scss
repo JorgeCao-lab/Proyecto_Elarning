@@ -1,0 +1,55 @@
+
+$primary-font: 'Plus Jakarta Sans', sans-serif; 
+
+/*SIZES*/ 
+
+$max-width-container:1300px;
+ 
+
+/*COLORES*/
+
+$color-blue:#666CA3;
+$color-blue-electric:#4851ff;
+$color-pink-electric:#F02AA6;
+$color-ocean:#13183F;
+$color-grey:#83869a;
+$color-pink:#f74780;
+$color-pinksoft:#ffa7c3;
+$color-orange:#FF6F48;
+
+
+/*Degradados*/
+$degrade-pink-orange:linear-gradient(
+    180deg,
+    $color-pink 0%,
+    $color-orange 100%
+);
+
+$degrade-blue-pink: linear-gradient(
+    180deg,
+    $color-blue-electric 0%,
+    $color-pink-electric 100%
+);
+
+$degrade-lineal-w:linear-gradient(
+    90deg,
+    #FFFFFF 0%,
+    #F0F1FF 100%
+);
+
+/*colores boton*/
+$degrade-buton-pink: linear-gradient(
+    180deg,
+    rgba($color-orange, 0.5) 0%,
+    rgba($color-pink-electric, 0.5) 100%
+);
+
+$degrade-buton-footer: linear-gradient(
+    180deg,
+    rgba($color-pink-electric , 0.5)0%,
+    rgba($color-blue-electric, 0.5) 100%
+);
+
+
+
+

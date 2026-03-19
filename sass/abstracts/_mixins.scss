@@ -1,0 +1,42 @@
+@use '../abstracts/variables';
+
+
+@mixin tablet{
+  @media (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (min-width: 1024px){
+    @content;
+  }
+}
+
+@mixin largedesktop {
+  @media (min-width:1440px){
+    @content;
+  }
+}
+
+@mixin reset-list(){
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin reset-contain(){
+  margin-inline:0;
+  padding-inline:16px;
+  max-width: 1320px;
+}
+
+@mixin button-link{
+  font-size: 18px;
+  font-weight: bold;
+  color: variables.$color-pink;
+  text-decoration: none;
+}
+

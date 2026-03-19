@@ -1,0 +1,53 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.button{
+    display: inline-block;
+    max-width: 80%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffff;
+}
+.button--orange-deg{
+    background: variables.$degrade-pink-orange;}
+
+@include mixins.desktop{
+.button--orange-deg{
+    background: variables.$degrade-pink-orange;
+
+    &:hover{
+        background: variables.$degrade-buton-pink;
+        }
+    }
+
+}
+
+.button--primary{
+        text-decoration: none;
+        font-weight: 700;
+    
+
+ @include mixins.desktop{
+    &:hover{
+        background:variables.$color-blue;
+        }
+    }
+}
+
+.button--secondary{
+    @include mixins.desktop{
+        &:hover{
+            background:variables.$degrade-buton-footer;
+        }
+    }
+}
+
+.card__link{
+    @include mixins.button-link();
+}
+
+
+

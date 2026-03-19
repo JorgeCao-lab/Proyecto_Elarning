@@ -1,0 +1,24 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../components/buttons';
+
+.footer{
+    background: variables.$color-ocean;
+    margin:-16px;
+    padding-inline: 16px;
+
+&__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 0;
+    
+}
+&__logo{
+    filter: brightness(0) invert(1)
+    }
+}
+
+.button--secondary{
+     background:variables.$degrade-blue-pink;
+}

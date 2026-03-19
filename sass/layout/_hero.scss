@@ -1,0 +1,270 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.hero{
+    &__content{
+        max-width:clamp(25rem,40vw,30rem);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size:clamp(2rem,4vw,2.8rem);
+        margin-bottom: 26px;
+        color: black;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 500;
+        color: variables.$color-grey;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-top: 10%;
+    }
+
+    &__img--movil{
+        width: clamp(18rem,30vw,28rem);
+        aspect-ratio: 2/3;
+        border-radius: 50%;
+        background: variables.$degrade-pink-orange;
+        overflow:hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__img--movil{
+        transition: transform .8s ease;
+    }
+
+    &__img--principal{
+        position: absolute;
+        top: 8%;
+        display: flex;
+        width: 80%;
+        height:auto;
+        object-fit: cover;
+    }
+
+
+    &__cartel{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background:white;
+        border-radius: 12px;
+        text-align:left;
+        box-shadow: 0 5px 10px black;
+    }
+    &__cartel{
+        transition: opacity .4s ease, transform .4s ease;
+    }
+    &__cartel__text{
+        color: variables.$color-grey;
+        font-size:14px;
+        font-weight: 700;
+        
+
+    }
+    &__cartel__num{
+        font-size: 32px;
+        font-weight: 800;
+        color: black;
+    }
+
+    &__cartel--hours{
+        padding: 16px 20px 16px 20px;
+        bottom:1%;
+        left:6%;
+    }
+
+    &__cartel--members{
+        padding:16px 45px 16px 20px;
+        top: 12%;
+        left:65%;
+    }
+
+    @include mixins.tablet{
+        
+    &__inner{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        }
+
+    &__img--principal{
+        width: 101%;
+        height: auto;
+    }
+
+    &__img--movil{
+        width: 17rem;
+        height: 28rem;
+        border-radius:200px 200px 200px 200px;
+        background: variables.$degrade-pink-orange;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__img--movil{
+        max-width: clamp(20px,40vw,32rem);
+    }
+
+    &__cartel--hours{
+        padding-right:9%;
+        margin-left: 16%;
+        margin-bottom: -2%;
+    }
+
+    &__cartel--members{
+        margin-left: -5%;
+        top: 9%;
+    }
+
+    &__img{
+        position: relative;
+        left: 10%;
+        transform: translate(0 , 0) scale(1);
+    }
+
+    &__img::before{
+        content: "";
+        position: absolute;
+        top:10%;
+        right:5.5%;
+        width: 30%;
+        height: 71%;
+        background: variables.$degrade-blue-pink;
+        transform:skewy(-40deg);
+        transition: transform 1.4s ease, 1.4s ease;
+    }
+
+    @include mixins.desktop{
+  
+
+    &__cartel{
+        opacity:0;
+        transform: translateX(20px);
+        pointer-events:none;
+        transition: opacity .4s ease, transform .4s ease;
+        }
+    &__img--movil{
+        max-width: clamp(20px,40vw,32rem);
+        transform: translate(40px , 30px) scale(1.1);
+        }
+
+     &__img::before{
+        content: "";
+        position: absolute;
+        top:10%;
+        right:5.5%;
+        width: 30%;
+        height:81%;
+        background: variables.$degrade-blue-pink;
+        transform:skewy(-40deg);
+        transition: translate 1.4s ease
+        }
+
+        
+    }
+
+    }
+    
+}
+
+.services{ 
+        padding-top: 66px;
+        padding-bottom: 16px;
+
+    &__inner{
+        background-image: variables.$degrade-pink-orange;
+        padding:2rem;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 8px;
+        position: relative;
+        margin-top:40px;
+        margin-bottom: 20%;
+    }
+
+    &__grid{
+        display: grid;
+        left: 20px;
+    }
+
+    @include mixins.tablet{
+
+        &__grid{
+            grid-template-columns: 1fr 1fr;
+            gap: 2%;
+        }
+    }
+    
+        &__grid{
+            display: grid;
+            }
+        @include mixins.desktop{  
+            &__grid{   
+                grid-template-columns: repeat(3,1fr);
+                }
+            }
+
+    .card{
+        position: relative;
+        margin-top:40px;;
+        padding: 2rem;
+        /*padding: 3rem 2rem 2rem; podria ser de esta manera el padding*/ 
+        background: white;
+        border-radius: 5%;
+        margin-bottom: 20%;
+      
+    &__img{
+        position: absolute;
+        top: -25px;
+        left: 20px;
+
+        width: 56px;
+        height: 56px;
+        background:variables.$degrade-pink-orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img img{
+        width: 24px;
+    }
+
+    &__title{
+        font-size: 20px;
+        font-weight: 800;
+        color: black;
+        padding-top: 5px;
+        padding-bottom:15px;
+    }   
+    
+    &__text{
+        max-width: 100%;
+        font-size:17px;
+        font-weight: 500;
+        color: variables.$color-grey;
+        padding-bottom: 20px;
+    }
+    &__link{
+       @include mixins.button-link();
+    }
+
+    }
+}
