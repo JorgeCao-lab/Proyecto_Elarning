@@ -27,13 +27,13 @@ Proyecto de práctica desarrollado con HTML, SCSS (Sass) y metodología BEM.
 ## 📸 Preview
 
 ### Mobile
-![Mobile](./img/preview-mobile.png)
+![Mobile](./img/Previwe-movil.png)
 
 ### Tablet
-![Tablet](./img/preview-tablet.png)
+![Tablet](./img/Preview-tablet.png)
 
 ### Desktop
-![Desktop](./img/preview-desktop.png)
+![Desktop](./img/Preview-desktop.png)
 
 ---
 
