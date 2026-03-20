@@ -1,55 +1,75 @@
-# Landing Page -  E-learning
+# 🚀 Landing Page - E-learning
 
-Proyecto de practica desarrollado con HTML , SCSS (Sass) y metodologia BEM.
+Proyecto de práctica desarrollado con HTML, SCSS (Sass) y metodología BEM.
 
-##🚀 Tecnologias
+---
 
--HTML
--SCSS (Sass)
--Vite
+## 🌐 Demo
+👉 [Ver sitio en vivo](https://proyectoelarning.vercel.app/)
+
+---
+
+## 🚀 Tecnologías
+- HTML5
+- SCSS (Sass)
+- Vite
+
+---
 
 ## 📱 Features
-
 - Diseño responsive
-- Metodologias BEM
-- Uso de variables y mixings
-- Layout modernos con Flexbox y grid
+- Metodología BEM
+- Uso de variables y mixins
+- Layout moderno con Flexbox y Grid
+
+---
 
 ## 📸 Preview
 
-[![Preview](./img/Previwe-movil.png)]
+### Mobile
+![Mobile](./img/preview-mobile.png)
 
-## 📸 Preview
+### Tablet
+![Tablet](./img/preview-tablet.png)
 
-[![Preview](./img/Preview-tablet.png)]
+### Desktop
+![Desktop](./img/preview-desktop.png)
 
-## 📸 Preview
+---
 
-[![Preview](./img/Preview-desktop.png)]
-
-
-## 🚀 Desafíos técnicos superados
-
+## 🧠 Desafíos técnicos superados
 - Arquitectura SCSS modular y escalable
 - Maquetación con BEM + Flexbox/Grid
 - Diseño responsive (mobile-first)
 - Uso de variables y mixins en Sass
 - Configuración de entorno con Vite
 
-## 🎨 Maquetacion 
-- IMplementacion de layout usando Flexbox y Grid
-- Uso de metodologia BEM para clases claras y reutilizables
-- Construccion de componentes reutilizables (buttins, cards)
+---
 
-## 📱 Diseño responsive
+## 🎨 Maquetación
+- Implementación de layout con Flexbox y Grid
+- Uso de metodología BEM
+- Componentes reutilizables (buttons, cards)
+
+---
+
+## 📱 Responsive
 - Enfoque mobile-first
-- Adaptacion a multiples breakpoints (mobile,tablet,desktop)
-- Uso de clamp() para tipografia y  escalabilidad fluida 
+- Adaptación a múltiples breakpoints
+- Uso de clamp() para tipografía fluida
 
-## ⚙️ Uso de SCSS avanzado 
-- IMplementacion de variables para consistencia de diseño
-- Uso de mixins para reutilizar logica (media queris, estilos)
+---
 
-## ⚡ Entorno de desarrollo moderno 
-- Configuracion de uso de Vite bundler
-- Estructura preparada para desarrollo rapido y optimizado
+## ⚙️ SCSS
+- Variables para consistencia
+- Mixins para reutilización
+
+---
+
+## ⚡ Entorno
+- Uso de Vite como bundler
+- Estructura optimizada para desarrollo
+
+## 📝 Notas
+Proyecto enfocado en maquetación y buenas prácticas de CSS.  
+No incluye lógica compleja en JavaScript.
